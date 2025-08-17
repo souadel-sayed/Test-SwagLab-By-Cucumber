@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="126.524" tests="11" skipped="0" failures="0" errors="0">
+<testcase classname="verify cart page" name="select  specific item to buy" time="13.627">
+<system-out><![CDATA[
+Given I am on the cart page.................................................passed
+When verify product as expected.............................................passed
+And I click on the check out icon...........................................passed
+Then User proceeds to information page......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Select item to buy" name="select  specific item to buy - #1.1" time="10.927">
+<system-out><![CDATA[
+Given I am on the hOME PAGE page............................................passed
+When I clickon add "Sauce Labs Backpack" to cart............................passed
+And I click on the cart icon................................................passed
+Then User proceeds to Cart page.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Select item to buy" name="select  specific item to buy - #1.2" time="13.78">
+<system-out><![CDATA[
+Given I am on the hOME PAGE page............................................passed
+When I clickon add "Sauce Labs Fleece Jacket" to cart.......................passed
+And I click on the cart icon................................................passed
+Then User proceeds to Cart page.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Select item to buy" name="select  specific item to buy - #1.3" time="14.012">
+<system-out><![CDATA[
+Given I am on the hOME PAGE page............................................passed
+When I clickon add "Test.allTheThings() T-Shirt (Red)" to cart..............passed
+And I click on the cart icon................................................passed
+Then User proceeds to Cart page.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="enter user information to check out" name="verifying the user information - #1.1" time="16.956">
+<system-out><![CDATA[
+Given I am on the information page..........................................passed
+When Enter "Souad" and "elsayed" and "12345"................................passed
+And click on Continue buttoun...............................................passed
+Then User proceeds to Overview page.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to Swag Lab website" name="Login with valid credentials - #1.1" time="11.879">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "standard_user" and password "secret_sauce"...........passed
+Then User proceeds to Products page.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to Swag Lab website" name="Login with valid credentials - #1.2" time="11.158">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "problem_user" and password "secret_sauce"............passed
+Then User proceeds to Products page.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to Swag Lab website" name="Login with invalid credentials - #1.1" time="7.883">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "secret_sauce" and password "wrong_pass"..............passed
+Then give me error message: Epic sadface: Username and password do not match any user in this service.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to Swag Lab website" name="Login with invalid credentials - #1.2" time="8.561">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "standard_user" and password "wrong_pass".............passed
+Then give me error message: Epic sadface: Username and password do not match any user in this service.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to Swag Lab website" name="Login with empty credentials - #1.1" time="7.48">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "" and password ""....................................passed
+Then give me error message:Epic sadface: Username is required...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to Swag Lab website" name="Login with empty password - #1.1" time="9.579">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "standard_user" and password "".......................passed
+Then give me error message:Epic sadface: Password is required...............passed
+]]></system-out>
+</testcase>
+</testsuite>
